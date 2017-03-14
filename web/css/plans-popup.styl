@@ -1,0 +1,60 @@
+#popup-plan-base
+#popup-plan-business
+#popup-plan-standart
+#popup-plan-im
+#popup-plan-event
+#popup-plan-individual
+    display: none;
+    &:target
+        display: block;
+    
+.popup-info
+    position: fixed;
+    top 0
+    bottom: 0
+    left: 0
+    right: 0
+    background-color: rgba(#000, .8)
+    z-index 100
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .popup-info-window
+        z-index: 101
+        background-color: #fff
+        width 850px
+        height 610px
+        position: relative;
+        padding: 0
+        .pi-close
+            position: absolute;
+            right 0px
+            top -20px
+            cursor: pointer;
+            font-size: 2em
+        h3
+            text-transform: none;
+            margin-top: 40px
+            background-color: color-cold
+            text-align: center;
+            font-weight: 400;
+        ul
+            padding: 0 100px
+        p
+            margin: 0 50px 1em 50px
+            font-size: 20px
+        .price
+            position: absolute;
+            bottom: 15px
+            right: 15px
+        form
+            margin: 40px
+
+#popup-plan-event
+    p
+        font-size: 18px
+
+#popup-plan-individual
+    input[type="submit"]
+        margin-top: 3em

@@ -1,0 +1,20 @@
+.request
+    h2 ЧТОБЫ ЗАКАЗАТЬ НАШИ УСЛУГИ ЗАПОЛНИТЕ ФОРМУ НИЖЕ:
+    form#form-order-request(method="post" action="/ajax/ajax.php")
+        input(type="hidden" name="action" value="order-request")
+        input(type="text" name="turing" value="")
+        .form-row
+            label ФИО
+                input(type="text" name="name" placeholder="Владимир Соколов" required)
+        .form-row
+            label EMAIL
+                input(type="email" name="email" placeholder="email@example.com" required)
+        .form-row
+            label ТЕЛЕФОН
+                input(type="text" name="phone" placeholder="+7 012 345-67-89, с 10 до 18")
+        .form-row
+            input(type="submit" value="ОТПРАВИТЬ ЗАЯВКУ")
+
+    .align-center.message Ваша заявка отправлена
+
+hr

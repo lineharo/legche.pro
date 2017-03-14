@@ -1,0 +1,96 @@
+#popup-plan-base
+    .popup-info
+        .popup-info-window
+            .pi-close &times;
+            h3 БАЗОВЫЙ
+            ul.lamp-min
+                li Аудит Вашей маркетинговой кампании
+                li Разработка LANDING PAGE 
+                li Настройка Яндекс.Директ + РСЯ
+                li -
+                li -
+                li -
+                li -
+            .price от 30 000 р
+
+#popup-plan-business
+    .popup-info
+        .popup-info-window
+            .pi-close &times;
+            h3 БИЗНЕС
+            ul.lamp-min
+                li Аудит Вашей маркетинговой кампании
+                li Разработка LANDING PAGE 
+                li Настройка Яндекс.Директ, Google Adwords
+                li Создание группы в VK, оформление
+                li Продвижение группы в VK
+                li Настройка Таргет VK
+                li Создание группы FB, оформление
+                li Создание аккаунта в INSTAGRAM
+                li Продвижение аккаунта в INSTAGRAM 
+            .price от 140 000 р
+            
+#popup-plan-standart
+    .popup-info
+        .popup-info-window
+            .pi-close &times;
+            h3 СТАНДАРТ
+            ul.lamp-min
+                li Аудит Вашей маркетинговой кампании
+                li Разработка LANDING PAGE 
+                li Настройка Яндекс.Директ + РСЯ
+                li Создание группы в VK, оформление
+                li Продвижение группы в VK
+                li Настройка Таргет VK
+                li -
+            .price от 40 000 р
+            
+#popup-plan-im
+    .popup-info
+        .popup-info-window
+            .pi-close &times;
+            h3 ИНТЕРНЕТ МАРКЕТИНГ под ключ
+            .align-center Направления работы:
+            ul.lamp-min
+                li медийная реклама
+                li контекстная реклама
+                li поисковый маркетинг (SEO)
+                li продвижение в социальных сетях: SMO и SMM
+                li вирусный маркетинг
+                li партизанский маркетинг
+                li интернет-брендинг
+            .button
+                a(href="#").button-order Получить прайс
+
+#popup-plan-event
+    .popup-info
+        .popup-info-window
+            .pi-close &times;
+            h3 EVENT под ключ
+            .align-center Направления работы:
+            p #[b TRADE EVENTS. ] События для партнеров, клиентов, дилеров, и дистрибьютеров компании. Конференции, семинары, форумы, конгрессы, саммиты, мероприятия на выставках, ярмарках и т.д.
+            p #[b CORPORATE EVENTS. ]Цель - постоение и укрепление лояльности к компании, а также сплочение команды. Формат- начиная от самых простых «посиделок в офисе» и заканчивая масштабными празднованиями юбилеев компании.
+            p #[b SPECIAL EVENTS. ] Цель - знакомство и вовлечение обывателей в мир бренда, создание эмоциональной «привязки». Фестивали, «народные гулянья», вручение премий, спортивные события, мероприятия для прессы, акции, дегустации и т.д.
+            p #[b Комплексное обслуживание] - создание годовой структурированной event-стратегии для компании. Отслеживание обратной связи. Продвижение через SMM и СМИ 
+            .button
+                a(href="#").button-order Получить портфолио
+
+#popup-plan-individual
+    .popup-info
+        .popup-info-window
+            .pi-close &times;
+            form#form-popup-individual(method="post" action="/ajax/ajax.php")
+                input(type="hidden" name="action" value="popup-individual")
+                input(type="text" name="turing" value="")
+                .form-row
+                    label ФИО
+                        input(type="text" name="name" placeholder="Владимир Соколов" required)
+                .form-row
+                    label EMAIL
+                        input(type="email" name="email" placeholder="email@example.com" required)
+                .form-row
+                    label ТЕЛЕФОН
+                        input(type="text" name="phone" placeholder="+7 012 345-67-89, с 10 до 18")
+                .form-row
+                    input(type="submit" value="СОЗДАТЬ ИНДИВИДУАЛЬНЫЙ ПАКЕТ")
+            .align-center.message Ваша заявка отправлена

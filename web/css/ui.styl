@@ -1,0 +1,26 @@
+.button
+    margin 40px auto
+    width: 840px
+    text-align: center;
+    .label
+        display: inline-block;
+        text-transform: uppercase;
+    a
+        display: inline-block;
+        margin: 20px
+        text-decoration: none;
+        text-align: center;
+        text-transform: uppercase;
+        color #000
+        background-color: color-accent
+        padding:3px 15px
+        border-radius: 10px
+        transition: background-color .3s
+        &:hover
+            background-color: lighten(color-accent, 40%)
+        &.white
+            background-color: color-accent
+            //background-color: #fff
+            &:hover
+                background-color: lighten(color-accent, 40%)
+                

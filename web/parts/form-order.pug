@@ -1,0 +1,29 @@
+#form-order-window
+    .popup-window
+        span.close &times;
+        h3 Оставить заявку
+        hr
+        form#form-order(method="post" action="/ajax/ajax.php")
+            input(type="hidden" name="action" value="order")
+            input(type="text" name="turing" value="")
+            .form-row
+                label Ваше имя:
+                input(type="text" name="name")
+            .form-row
+                label Ваш телефон:
+                input(type="text" name="phone")
+            .form-row
+                label Ваш email:
+                input(type="email" name="email" required)
+            .form-row
+                label Комментарий:
+                textarea(name="comment" rows="6")
+            .form-row
+                input(type="submit" value="Заказать")
+        .message Заявка отправлена
+        
+        
+        
+        
+    
+            

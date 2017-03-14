@@ -1,0 +1,94 @@
+.plans
+    width 840px
+    height: 520px
+    margin: 30px auto;
+    position: relative;
+    
+    .plan
+        position: absolute;
+        height 200px
+        cursor: pointer;
+        text-decoration: none;
+        color #000
+        &:before
+            position: absolute;
+            content: ""
+            top 0
+            bottom: 0
+            left: 0
+            right: 0
+            z-index: -1
+            opacity: .4
+            transition: opacity .3s
+        &:hover
+            &:before
+                opacity: .6
+        .name
+            margin: 10px
+            text-transform: uppercase;
+            font-weight: 600;
+            top 10px
+            left: 10px
+            span
+                text-transform: lowercase;
+                position: relative;
+                top -10px
+        .descr
+            margin: 10px
+            font-size: 20px
+        .price
+            padding: 10px
+            font-size: 20px
+            text-align: left;
+            position: absolute;
+    
+    .base
+        width 351px
+        top 0
+        left 0
+        &:before
+            background-image: url(/images/pl-base.jpg);
+        .price
+            bottom: 10px
+            left 150px
+
+    .standart
+        width 234px
+        top 0
+        left 361px
+        &:before
+            background-image: url(/images/pl-standart.jpg);
+        .price
+            bottom: 10px
+
+    .event
+        width 234px
+        top 210px
+        left 0
+        &:before
+            background-image: url(/images/pl-event.jpg);
+        
+    .inetmarketing
+        width 351px
+        top 210px
+        left 244px
+        &:before
+            background-image: url(/images/pl-im.jpg);
+        
+    .individual
+        width 595px
+        top 420px
+        left 0
+        height 100px
+        &:before
+            background-image: url(/images/pl-individual.jpg);
+
+    .business
+        width 234px
+        top 0
+        left 605px
+        height 520px
+        &:before
+            background-image: url(/images/pl-business.jpg);
+        .price
+            bottom: 100px

@@ -1,0 +1,73 @@
+.align-center
+    text-align: center;
+    
+.note
+    width 100%
+    background-color: #fff
+    color #000
+    text-transform: uppercase;
+    padding: 5px 10px
+    text-align: center;
+
+ul.lamp-min
+ul.lamp
+    list-style: none;
+    li
+        line-height: 30px
+        margin 20px 0
+        padding: 8px 0
+        position: relative;
+        &:before
+            content: ""
+            position: absolute;
+            top 0
+            left -35px
+            width 30px
+            bottom: 0
+            background-image: url(/images/icon-lamp2.png);
+            background-position: 50% 50%
+            background-repeat: no-repeat;
+
+ul.lamp-min
+    li
+        margin 16px 0
+        padding: 0
+        &:before
+            background-image: url(/images/icon-lamp.png);
+form
+    .form-row
+        width 100%
+        margin-bottom: 1em
+        label
+            display: block;
+            margin: 0
+            color color-a
+        input[type=text]
+        input[type=email]
+        textarea
+            font-size: 0.85em
+            width calc(100% - 30px)
+            padding 15px
+            border none
+            background-color: #ddd
+        input[type=submit]
+            -webkit-appearance: none;
+            background-color: color-accent
+            border-radius: 10px
+            border none
+            cursor: pointer;
+            color #000
+            display: block;
+            font-size: 1em
+            margin: 10px auto
+            padding:8px 25px
+            text-align: center;
+            text-transform: uppercase;
+            transition: background-color .3s
+            &:hover
+                background-color: lighten(color-accent, 40%)
+    input[name="turing"]
+        display none !important
+        
+.message
+    display: none;
