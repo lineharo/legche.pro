@@ -32,28 +32,6 @@ $(document).ready(function() {
         });
     });
     
-    $('.close').click(function(){
-        $(this).parent().parent().hide();
-    });
-
-    $('.button-call').click(function(event){
-        event.preventDefault();
-        $('#form-call-window').show();
-    });
-    
-    $('.button-order').click(function(event){
-        event.preventDefault();
-        $('#form-order-window').show();
-    });
-    
-    $('#popup-plan-event .button-order').click(function(event){
-        $('#popup-plan-event').hide();
-    });
-    
-    $('#popup-plan-im .button-order').click(function(event){
-        $('#popup-plan-im').hide();
-    });
-
     var $form_order_request = $('#form-order-request');
     $form_order_request.submit(function(e) {
         e.preventDefault();
@@ -67,53 +45,75 @@ $(document).ready(function() {
             }
         });
     });
+    
+    
+    $('.button-call').click(function(event){
+        event.preventDefault();
+        $('#form-call-window').show();
+    });
+    
+    $('.button-order').click(function(event){
+        event.preventDefault();
+        $('#form-order-window').show();
+    });
+    
+    $('#popup-service-event .button-order').click(function(event){
+        $('#popup-service-event').hide();
+    });
 
-    $('.plan.base').click(function(e){
+    $('li.sites a.a-button').click(function(e){
         e.preventDefault();
-        $('#popup-plan-base').show();
+        $('#popup-service-site').show();
     });
 
-    $('.plan.business').click(function(e){
+    $('li.context a.a-button').click(function(e){
         e.preventDefault();
-        $('#popup-plan-business').show();
+        $('#popup-service-context').show();
     });
     
-    $('.plan.standart').click(function(e){
+    $('li.smm a.a-button').click(function(e){
         e.preventDefault();
-        $('#popup-plan-standart').show();
+        $('#popup-service-smm').show();
     });
     
-    $('.plan.inetmarketing').click(function(e){
+    $('li.event a.a-button').click(function(e){
         e.preventDefault();
-        $('#popup-plan-im').show();
+        $('#popup-service-event').show();
     });
     
-    $('.plan.event').click(function(e){
+    $('li.design a.a-button').click(function(e){
         e.preventDefault();
-        $('#popup-plan-event').show();
+        $('#popup-service-design').show();
     });
     
-    $('.plan.individual').click(function(e){
+    $('.individual .button a').click(function(e){
         e.preventDefault();
-        $('#popup-plan-individual').show();
+        $('#popup-service-individual').show();
     });
     
-    var $form_popup_individual = $('#form-popup-individual');
-    $form_popup_individual.submit(function(e) {
-        e.preventDefault();
-        $.post('/ajax/ajax.php', $(this).serialize(), function(data){
-            var result = JSON.parse(data);
-            if (result.RESULT === 'FAIL') {
-                $form_popup_individual.find('.message').show().html('Ошибка отправки заявки');
-            } else {
-                $form_popup_individual.parent().find('.message').show().html('Ваша заявка отправлена');
-            
-            }
-        });
-    });
+    // var $form_popup_individual = $('#form-popup-individual');
+    // $form_popup_individual.submit(function(e) {
+    //     e.preventDefault();
+    //     $.post('/ajax/ajax.php', $(this).serialize(), function(data){
+    //         var result = JSON.parse(data);
+    //         if (result.RESULT === 'FAIL') {
+    //             $form_popup_individual.find('.message').show().html('Ошибка отправки заявки');
+    //         } else {
+    //             $form_popup_individual.parent().find('.message').show().html('Ваша заявка отправлена');
+    //         
+    //         }
+    //     });
+    // });
     
     $('.pi-close').click(function(){
-        $(this).parent().parent().parent().hide();
+        $(this).parent().parent().parent().fadeOut( "fast")();
+    });
+    
+    var $popup_info = $('.popup-info');
+    $popup_info.click(function(e){
+        if (e.target === this) {
+            $(this).parent().fadeOut( "fast");
+        }
     });
 
     var h_hght = 450; // высота шапки
@@ -139,7 +139,6 @@ $(document).ready(function() {
                 elem.css('background-color', 'rgba(255,255,255, 0.8)');
             }
         });
-     
     });
 
 });

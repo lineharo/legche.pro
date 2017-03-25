@@ -1,17 +1,17 @@
 #form-call-window
-    .popup-window
-        span.close &times;
-        h3 Заказ обратного звонка
-        hr
-        form#form-call(method="post" action="/ajax/ajax.php")
-            input(type="hidden" name="action" value="call")
-            input(type="text" name="turing" value="")
-            .form-row
-                label Ваше имя:
-                input(type="text" name="name")
-            .form-row
-                label Ваш телефон:
-                input(type="text" name="phone" required)
-            .form-row
-                input(type="submit" value="Заказать")
-        .message Запрос отправлен
+    .popup-info
+        .popup-info-window
+            .pi-close &times;
+            h3 Заказ обратного звонка
+            form#form-call(method="post" action="/ajax/ajax.php")
+                input(type="hidden" name="action" value="call")
+                input(type="text" name="turing" value="")
+                .form-row
+                    label Ваше имя:
+                    input(type="text" name="name")
+                .form-row
+                    label Ваш телефон:
+                    input(type="text" name="phone" required)
+                .form-row
+                    input(type="submit" value="Заказать")
+            .message Запрос отправлен

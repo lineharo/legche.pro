@@ -1,0 +1,29 @@
+#services
+    padding: 20px 0;
+    position: relative;
+    width: 100%
+    &:before
+        position: absolute;
+        content ""
+        top 0
+        left 0
+        bottom: 0
+        right: 0
+        background-image: url(/images/services-bg.png);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: top;
+        background-repeat: no-repeat;
+        opacity: 0.5
+        z-index: -1
+        
+ul.services
+    list-style: none;
+    padding: 0
+    li
+        text-transform: uppercase;
+        display: flex;
+        justify-content: space-between;
+        margin: 1.2em 0
+        p
+            margin: 0
