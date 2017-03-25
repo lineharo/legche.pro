@@ -1,19 +1,35 @@
 .principles
     padding: 20px 0;
-    
-.top
-    display: flex;
-    flex-wrap: nowrap;
-    margin-bottom: 20px
-    justify-content: space-between;
+    background-image: url(/images/princip.jpg);
+    background-size: cover;
+    position: relative;
+    &:before
+        position: absolute;
+        content ""
+        top 0
+        left 0
+        bottom: 0
+        right: 0
+        background-color: rgba(#fff, .1)
+
+.principles-list
+    display: flex
     max-width: 840px
-    margin: 0 auto 20px auto;
+    width: 100%
+    margin: 0 auto;
+    justify-content: center;
+    flex-wrap: wrap;
     
-.principle-top
+.principle
     width 260px
     position: relative;
     text-align: center;
-    margin 0 10px
+    margin 40px 10px
+    .result
+        background-color: rgba(#fff, .7)
+        padding: 7px 7px
+        text-transform: uppercase;
+        font-size: 0.8em
     .descr
         position: relative;
         margin-bottom: 20px
@@ -21,56 +37,4 @@
         min-height: 150px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-    &:after
-        font-family: FontAwesome;
-        content: "\f176"
-        color color-cold
-        position: absolute;
-        bottom -23px
-        left: 50%;
-        font-size: 1.3em
-
-.result
-    background-color: color-bk
-    padding: 5px 7px
-    text-transform: uppercase;
-    font-size: 0.8em
-        
-.principle-line
-    width 100%
-    background-color: color-cold
-    font-size: 1.5em
-    padding: 5px 0
-    text-align: center;
-    text-transform: uppercase;
-    
-.bottom
-    display: flex;
-    flex-wrap: nowrap;
-    margin-bottom: 20px
-    justify-content: space-between;
-    max-width: 840px
-    margin: 0 auto 20px auto;
-    
-.principle-bottom
-    width 260px
-    position: relative;
-    text-align: center;
-    margin 0 10px
-    .descr
-        position: relative;
-        margin-top: 20px
-        min-height: 150px;
-        font-size: 20px
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    &:before
-        font-family: FontAwesome;
-        content: "\f175"
-        color color-cold
-        position: absolute;
-        top 0px
-        left: 50%;
-        font-size: 1.3em
+        justify-content: center;        
