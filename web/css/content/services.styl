@@ -1,5 +1,4 @@
 #services
-    padding: 20px 0;
     position: relative;
     width: 100%
     &:before
@@ -23,7 +22,16 @@ ul.services
     li
         text-transform: uppercase;
         display: flex;
-        justify-content: space-between;
+        flex-wrap wrap
+        justify-content: space-around;
         margin: 1.2em 0
         p
             margin: 0
+            margin-bottom: 10px
+            margin-right: 10px
+            flex-grow: 1
+            @media all and (max-width 700px)
+                min-width: 100%
+                text-align: center
+        a
+            margin-bottom: 20px
