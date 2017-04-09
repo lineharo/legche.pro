@@ -1,5 +1,6 @@
 .header
     width: 100%
+    height: 526px
     position: relative;
     display: flex;
     flex-direction: column;
@@ -11,15 +12,14 @@
     background-position: top;
     background-repeat: no-repeat;
     background-image: url(/images/01bk.jpg)
+
     .top-menu
         width 70%
-        margin 30px 10px
+        margin 30px 40px
         text-transform: uppercase;
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
-        @media all and (max-width 900px)
-            width 100%
         a
             text-decoration: none;
             font-size: 1em
@@ -31,29 +31,43 @@
             &:hover
                 background-color: color-cold
 
-    .logo
-        max-width 570px
-        width 100%
-        min-height 160px
-        margin: 90px 10px
-        text-align: center
-        img
-            width 90%
+    .slogan
+        width 570px
+        height 160px
+        margin-top: 90px
+        position: relative;
+        .marketing
+            position: absolute;
+            top 0
+            left 0
+            font-size: 25px
+            text-transform: uppercase;
+        .legche
+            position: absolute;
+            top -23px
+            left 150px
+            font-size: 91px
+        .think
+            position: absolute;
+            top 75px
+            left 150px
+            font-size: 45px
     
     .c-wrap
         width: 100%
         padding: 5px 0
+        position: fixed;
+        top 450px;
         text-align: center;
         display: flex;
         transition: background-color 0.5s
         z-index: 10
 
-        .contacts
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap
-            max-width: 500px
-            width 100%
-            margin auto
-            background-color: rgba(#fff, 0)
+    .contacts
+        display: flex;
+        justify-content: space-between;
+        max-width: 500px
+        width 100%
+        margin auto
+        background-color: rgba(#fff, 0)
         

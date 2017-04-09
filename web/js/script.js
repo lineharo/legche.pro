@@ -116,8 +116,7 @@ $(document).ready(function() {
         }
     });
 
-    var h_hght = $('.header .c-wrap').position().top; // высота шапки
-    console.log(h_hght);
+    var h_hght = 450; // высота шапки
     var h_mrg = 0;    // отступ когда шапка уже не видна
                      
     $(function(){
@@ -133,13 +132,11 @@ $(document).ready(function() {
             top = $(this).scrollTop();
              
             if (top+h_mrg < h_hght) {
-                elem.css('top', '0');
+                elem.css('top', (h_hght-top));
                 elem.css('background-color', 'rgba(255,255,255, 0)');
-                elem.css('position','relative')
             } else {
                 elem.css('top', h_mrg);
                 elem.css('background-color', 'rgba(255,255,255, 0.8)');
-                elem.css('position', 'fixed');
             }
         });
     });
