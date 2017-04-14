@@ -13,5 +13,9 @@
                     label Ваш телефон:
                     input(type="text" name="phone" required)
                 .form-row
+                    input#contact-privacy2(type='checkbox' name='contact-privacy' value='privacy' checked required)
+                    label(for='contact-privacy2') Я принимаю условия #[a.privacy(href="#" target="_blank") Соглашения о неразглашении]
+                .form-row
                     input(type="submit" value="Заказать")
+
             .message Запрос отправлен

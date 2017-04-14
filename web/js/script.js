@@ -57,6 +57,11 @@ $(document).ready(function() {
         $('#form-order-window').show();
     });
     
+    $('a.privacy').click(function (event) {
+        event.preventDefault();
+        $('#popup-privacy').show();
+    });
+
     $('#popup-service-event .button-order').click(function(event){
         $('#popup-service-event').hide();
     });
