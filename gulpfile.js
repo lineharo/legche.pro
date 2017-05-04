@@ -19,7 +19,7 @@ gulp.task('pug', function () {
 gulp.task('stylus', function () {
   gulp.src('web/style.styl')
   .pipe(stylus({
-    compress: true
+    compress: false
   }))
   .on('error', gutil.log)
   .pipe(gulp.dest(projPath));

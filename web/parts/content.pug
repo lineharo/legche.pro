@@ -2,13 +2,13 @@
     .margins
         p ЛЕГЧЕ – это Ваш отдел маркетинга, находящийся на соседней улице и доступный по первому звонку или e-mail. Мы команда специалистов, которая готова взять всё продвижение бренда на себя.
         p Вам не нужно искать специалистов, создавать дополнительные рабочие места и тратить свое время на внедрение в специфику маркетинговой деятельности.
-        p Позвонив, Вы поймете, что с нами маркетинг – гораздо #[i ЛЕГЧЕ], чем кажется. </p>
+        p Позвонив, Вы поймете, что с нами маркетинг – гораздо #[i ЛЕГЧЕ], чем кажется.
 
 
 .description-scheme
     h2 Направления нашей работы:
     .margins
-        img(src='/images/lamp-01.png' width="840px")
+        img(src='/images/lamp-01.png' width="840" alt="аутсорсинг маркетинга, брендинг, продвижение, дизайн")
     //- .label-outsouceing
     //-     .caption аутсорсинг маркетинга
     //-     .descr передача всей маркетинговой деятельности или ее части нашей компании
@@ -66,8 +66,8 @@ hr
 
 #services.fixed-bg
     .margins
-        h2 Наши услуги
         article
+            h2 Наши услуги
             ul.services
                 li.sites
                     p Создание сайтов любой сложности
@@ -107,7 +107,7 @@ hr
         h2 аудит вашей рекламной кампании
         p #[b Процесс:] на встрече мы анализируем рекламную кампанию, выясняем маркетинговые инструменты именно Вашего бизнеса с максималной конверсией.
         p #[b Результат:] Через 5 рабочих дней Вы получаете полный аудит Вашей рекламной кампании, аудит деятельности Ваших главных конкурентов в интернете, а так же подробный мануал по привлечению новых клиентов и продвижению Вашего бренда.
-        .note СТОИМОСТЬ УСЛУГИ #[strike 15000] 8000 РУБЛЕЙ
+        .note СТОИМОСТЬ УСЛУГИ #[span.old 15000] 8000 РУБЛЕЙ
         
         .button
             .label заказать бесплатный аудит
@@ -173,16 +173,16 @@ hr
 
 #statistics
     .margins
-        articles
-            section.stat
+        .stat-wrap
+            .stat
                 .number
                     p >4
                 .descr более четырёх лет успешной работы
-            section.stat
+            .stat
                 .number 
                     p.long >1 000 000
                 .descr более миллиона целевых кликов
-            section.stat
+            .stat
                 .number
                     p >80
                 .descr более 80 успешных проектов
@@ -190,29 +190,29 @@ hr
 hr
 
 #reviews
-    h2 Отзывы
     .margins
         article
-            section.review
-                img.photo(src="/images/reviews/vichurov.png")
+            h2 Отзывы
+            .review
+                img.photo(src="/images/reviews/vichurov.png" alt="Вичуров")
                 blockquote
                     cite.name Иван Вичуров. 
                         span.pos Школа игры на гитаре
                     p Я - музыкант. У нас своя школа игры на гитаре. Рынок очень конкурентный, да и мы люди творческие, в аналитике и маркетинге не профессионалы. Менеджер приехал, все рассказал, все показал. Запустились, работаем.
-            section.review
-                img.photo(src="/images/reviews/hrenkov.png")
+            .review
+                img.photo(src="/images/reviews/hrenkov.png" alt="Хренков")
                 blockquote
                     cite.name Сергей Хренков. 
                         span.pos Предприниматель
                     p У нас свой бизнес по авто-диагностике. Нет времени заниматься маркетингом, очень много других задач. Отдали продвижение агентству на аутсорсинг, и не пожалели.  Сотрудничаем уже долгое время.
-            section.review
-                img.photo(src="/images/reviews/avril.png")
+            .review
+                img.photo(src="/images/reviews/avril.png" alt="Авриль")
                 blockquote
                     cite.name Ян Авриль. 
                         span.pos Фотограф
                     p Я фотограф, занимаемся профессиональной фотосьемкой. Меня интересовало продвижение в соц. сетях. Приехала менеджер – Екатерина. Все обсудили и сразу приступили к работе. Поразил индивидуальный подход к нашему проекту.  
-            section.review
-                img.photo(src="/images/reviews/mihnenko.png")
+            .review
+                img.photo(src="/images/reviews/mihnenko.png" alt="Михленко")
                 blockquote
                     cite.name Евгения Михненко. 
                         span.pos Руководитель производственной компании
@@ -235,8 +235,8 @@ hr
                 label ТЕЛЕФОН
                     input(type="text" name="phone" placeholder="+7 012 345-67-89, с 10 до 18")
             .form-row
-                input#contact-privacy2(type='checkbox' name='contact-privacy' value='privacy' checked required)
-                label(for='contact-privacy2') Я принимаю условия #[a.privacy(href="#" target="_blank") Соглашения о неразглашении]
+                input#contact-privacy3(type='checkbox' name='contact-privacy' value='privacy' checked required)
+                label(for='contact-privacy3') Я принимаю условия #[a.privacy(href="#" target="_blank") Соглашения о неразглашении]
             .form-row
                 input(type="submit" value="ОТПРАВИТЬ ЗАЯВКУ")
 
